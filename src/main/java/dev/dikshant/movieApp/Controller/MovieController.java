@@ -1,7 +1,10 @@
-package dev.dikshant.movieApp;
+package dev.dikshant.movieApp.Controller;
 
 import java.util.List;
 import java.util.Optional;
+
+import dev.dikshant.movieApp.Dtos.Movie;
+import dev.dikshant.movieApp.Service.MovieService;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

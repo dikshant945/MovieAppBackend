@@ -1,19 +1,22 @@
-package dev.dikshant.movieApp;
+package dev.dikshant.movieApp.Service;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
+
+import dev.dikshant.movieApp.Dtos.Movie;
+import dev.dikshant.movieApp.Dtos.Review;
+import dev.dikshant.movieApp.Repositories.MovieRepository;
+import dev.dikshant.movieApp.Repositories.ReviewRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
-import org.springframework.data.mongodb.core.query.Criteria;
-import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
 
 @Service
 @Slf4j
 public class ReviewService {
-    @Autowired ReviewRepository reviewRepository;
+    @Autowired
+    ReviewRepository reviewRepository;
 
     @Autowired
     private MovieRepository movieRepository;
