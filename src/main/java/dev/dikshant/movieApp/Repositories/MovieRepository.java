@@ -1,6 +1,8 @@
-package dev.dikshant.movieApp;
+package dev.dikshant.movieApp.Repositories;
 
 import java.util.Optional;
+
+import dev.dikshant.movieApp.Dtos.Movie;
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;

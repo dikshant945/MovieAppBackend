@@ -1,4 +1,4 @@
-package dev.dikshant.movieApp;
+package dev.dikshant.movieApp.Dtos;
 
 import java.util.List;
 import lombok.AllArgsConstructor;
@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.data.mongodb.core.mapping.DocumentReference;
 
 @Document(collection = "Movies") @Data @AllArgsConstructor @NoArgsConstructor public class Movie {
     @Id
